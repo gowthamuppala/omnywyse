@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Calendar</title>
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <div class="appointment-container">
+      <h1>Appointment</h1>
+      <div class="date-picker">
+        <input type="date" id="datePicker" value="2024-03-21" />
+        <div class="month-year">
+          <span id="monthDisplay">March</span>
+          <span id="yearDisplay">2024</span>
+        </div>
+        <div class="calendar">
+          <!-- Calendar grid will be dynamically generated with JavaScript -->
+        </div>
+      </div>
+      <div class="time-slots">
+        <button class="time-slot">9:00 AM</button>
+        <button class="time-slot">10:00 AM</button>
+        <button class="time-slot">11:00 AM</button>
+        <button class="time-slot">2:00 PM</button>
+        <button class="time-slot">3:00 PM</button>
+        <button class="time-slot">4:00 PM</button>
+      </div>
+      <form>
+        <label for="options"></label>
+        <select id="options" name="options">
+          <option value="Audio Call">Audio Call</option>
+          <option value="Video Meet">Video Meet</option>
+          <option value="In-Person Contact">In-Person Contact</option>
+        </select>
+      </form>
+
+      <!-- Popup Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modalMessage"></p>
+        </div>
+      </div>
+
+      <button id="confirm-btn">Confirm</button>
+      <div class="timezone">
+        <span>IST (GMT+5:30)</span>
+      </div>
+    </div>
+    <script src="booking.js"></script>
+  </body>
+</html>

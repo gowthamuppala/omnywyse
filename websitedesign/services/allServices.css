@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.matter{
+    padding: 10px 50px;
+}
+
+nav {
+    background-color:rgb(169, 236, 236);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    /* z-index: 2; */
+
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-links{
+    margin-left: auto;
+}
+
+nav a {
+    color: #170592;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    background-color: #baf99f;
+}
+
+/* login icon */
+
+.login-icon img{
+    width:50px;
+    height: 40px;
+    
+}
+
+.login-icon a{
+    cursor: pointer;
+    
+}
+
+.login-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    margin-left: auto;
+
+}
+
+.website-logo{
+    width: 170px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    order: -1;
+}
+
+.website-logo img{
+    width: 180px;
+    height: 120px;
+}
+
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+ul li{
+    font-size: 1.5rem;
+}
+
+.main-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+}
+
+.types{
+    width:500px;
+    height: 400px;
+}
+
+.cards{
+    margin: auto;
+}

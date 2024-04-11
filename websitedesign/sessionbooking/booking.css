@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.appointment-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: #6a5acd;
+}
+
+/* Date Picker Styles */
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#datePicker {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.month-year {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #6a5acd;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.calendar div {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.calendar div.current-date {
+  background-color: #6a5acd;
+  color: #fff;
+}
+
+/* Time Slots Styles */
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.time-slot {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.time-slot:hover {
+  background-color: #6a5acd;
+  color: #fff;
+}
+
+/* Timezone Styles */
+.timezone {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.selected {
+  background-color: #6a5acd;
+  color: white; /* Example: change text color */
+}
+
+#confirm-btn {
+  font-size: 1rem;
+  background-color: green;
+  float: right;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* css for options */
+/* Style the form container */
+form {
+  margin: 20px;
+}
+
+/* Style the label */
+label {
+  font-size: 16px;
+}
+
+/* Style the dropdown select element */
+select {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the dropdown options */
+option {
+  font-size: 16px;
+}
+
+/* popup css */
+
+/* Popup Modal */
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 120px;
+  overflow: auto;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the modal vertically */
+  /* background-color: rgba(0,0,0,0.4); */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto; /* Center the modal horizontally */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Set the width of the modal */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

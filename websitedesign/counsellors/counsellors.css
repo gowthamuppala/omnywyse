@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar */
+
+nav {
+    background-color:rgb(169, 236, 236);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-links{
+    margin-left: auto;
+}
+
+nav a {
+    color: #170592;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.8rem;
+}
+
+nav a:hover {
+    background-color: #baf99f;
+}
+
+/* login icon */
+
+.login-icon img{
+    width:50px;
+    height: 50px;
+    
+}
+
+.login-icon a{
+    cursor: pointer;
+    
+}
+
+.login-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    margin-left: auto;
+
+}
+
+.website-logo{
+    width: 170px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    order: -1;
+}
+
+.website-logo img{
+    width: 180px;
+    height: 110px;
+}
+ 
+#main-section{
+    height: 750px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+#main-section::before{ 
+    content: "";
+    position: absolute;
+    background: url('../images/doctors/counsellorbg.jpg') ;
+    background-repeat: no-repeat; 
+    background-position: bottom;
+    background-size: cover; 
+
+
+    height: 750px;
+    width: 1900px;
+    z-index: -1;
+    /* visibility: 0.8; */
+    /* margin: 0; */
+} 
+
+/* list of counsellors */
+
+.r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.c-1, .c-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    margin: 1.5rem;
+    /* border: 2px solid black; */
+    padding: 5px;
+    background-color: rgb(235, 234, 234);
+    margin: 2remx 20rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.c-image, .c-text{
+    padding: 15px;
+}
+
+h1{
+    font-size: 2.5rem;
+    
+    /* color: #170592; */
+   
+}
+
+h2{
+    font-size: 2rem;
+    /* color: #170592; */
+}
+
+h3{
+    font-size: 1.5rem;
+    /* color: #170592; */
+}
+
+.c-btn button{
+    font-size: 1.2rem;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* background-color: antiquwhite; */
+}
+
+.t-images{
+    border-radius: 75%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+}

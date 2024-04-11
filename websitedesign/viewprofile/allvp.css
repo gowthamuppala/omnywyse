@@ -1,0 +1,37 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    display: flex;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+ul li {
+    font-size: 1.5rem;
+}
+
+.left{
+    width: 33%;
+    margin: 20px;
+    text-align: center;
+}
+
+.booking{
+    font-size: 1.5rem;
+    padding: 2px;
+}
+
+.profile-image{
+    width: 350px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.right{
+    padding-right: 20px;
+}
